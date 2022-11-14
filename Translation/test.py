@@ -4,11 +4,24 @@ import matplotlib.pyplot as plt
 
 mario=Image.new("RGB",(8,8),"white")  
 
-translation=Image.new("RGB",(10,10),"white")
+test=Image.open("images/test.png")
+print(test.size[0])
+test.show()
 
-for i in range
+translation=Image.new("RGB",(test.size[0]+200,test.size[1]),"white")
+rouge=(255,0,0)
+
+for i in range(test.size[0]):
+    for j in range(test.size[1]):
+        translation.putpixel((i+200,j),test.getpixel((i,j)))
 
 
+translation.show()
+
+
+
+
+'''
 # Create the red, blue and green color
 R = [255, 0, 0]
 G = [0, 255, 0]
@@ -18,3 +31,4 @@ RGB = np.array([[G, B, R], [B, R, G], [R, G, B]], dtype=np.uint8)
 # Disp the RGB first table
 plt.imshow(RGB)
 plt.show()
+'''
