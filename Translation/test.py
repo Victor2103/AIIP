@@ -8,9 +8,10 @@ test = Image.open("../images/test.png")
 print(test.size[0])
 # test.show()
 
-var = 3
+var = 3.5
 
-translation = Image.new("RGB", (var*test.size[0], var*test.size[1]), "white")
+
+translation = Image.new("RGB", (int(var*test.size[0])+1, test.size[1]), "white")
 rouge = (255, 0, 0)
 
 print(test.getpixel((5, 5)))
@@ -18,10 +19,11 @@ print(test.getpixel((5, 5)))
 
 for i in range(test.size[0]):
     for j in range(test.size[1]):
-        translation.putpixel((var*i, j), test.getpixel((i, j)))
+        translation.putpixel((int(var*i), j), test.getpixel((i, j)))
 
 
 translation.show()
+test.show()
 
 
 '''
