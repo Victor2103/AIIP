@@ -4,7 +4,7 @@ from PIL import Image
  
 # Giving The Original image Directory
 # Specified
-Original_Image = Image.open("../images/test.png")
+Original_Image = Image.open("./images/test.png")
  
 # Rotate Image By 180 Degree
 rotated_image1 = Original_Image.rotate(180)
