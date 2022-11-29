@@ -8,7 +8,7 @@ def switch():
     img_path = 'images/test.png'
 
 def switch():
-    print("Press 1 for Translation \nPress 2 for Resizing \nPress 3 for Rotation \nPress 4 for Sheared images \n Press 5 for Aliasing demonstration")
+    print("Press 1 for Translation \nPress 2 for Resizing \nPress 3 for Rotation \nPress 4 for Sheared images \nPress 5 for Aliasing demonstration")
  
     option = int(input("your option : "))
     print("\n")
