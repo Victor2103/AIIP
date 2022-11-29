@@ -18,7 +18,7 @@ def switch():
         translation()
  
     elif option == 2:
-        resize()
+        resize() 
  
     elif option == 3:
         rotatation()
